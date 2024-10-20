@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 300px;
+    padding: 25px;
+    border-radius: 4px;
+    background: rgba(white, 0.5);
+}
+
+.title {
+    color: #c0c0c0;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}

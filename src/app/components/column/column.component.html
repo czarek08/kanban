@@ -1,0 +1,7 @@
+<div class="title">{{colTitle()}}</div>
+
+<div class="tasks-container">
+    @for(task of tasks(); track task) {
+        <app-task [task]="task" cdkDrag/>
+    }
+</div>

@@ -1,0 +1,41 @@
+<div class="bar">
+    <p class="name">Board Name</p>
+</div>
+
+<div class="wrapper">
+    <div class="columns" cdkDropListGroup>
+
+        <app-column 
+            colTitle="Ideas"
+            [tasks]="ideas()"
+            cdkDropList
+            [cdkDropListData]="ideas()"
+            (cdkDropListDropped)="drop($event)"
+        />
+
+        <app-column 
+            colTitle="Research"
+            [tasks]="research()"
+            cdkDropList
+            [cdkDropListData]="research()"
+            (cdkDropListDropped)="drop($event)"
+        />
+
+        <app-column 
+            colTitle="Todo"
+            [tasks]="todo()"
+            cdkDropList
+            [cdkDropListData]="todo()"
+            (cdkDropListDropped)="drop($event)"
+        />
+
+        <app-column 
+            colTitle="Done"
+            [tasks]="done()"
+            cdkDropList
+            [cdkDropListData]="done()"
+            (cdkDropListDropped)="drop($event)"
+        />
+
+    </div>
+</div>
